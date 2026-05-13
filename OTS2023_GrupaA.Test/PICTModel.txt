@@ -1,0 +1,10 @@
+Score: Bad, Average, Good
+AmountOfGold: 0, 1, 5, 11, 15, 16, 20
+RevealHiddenItem: True, False
+
+# 1.
+IF [AmountOfGold] > 10 THEN [Score] = Good
+
+# 2.
+IF [AmountOfGold] > 15 AND [RevealHiddenItem] = True THEN [Score] = Average
+IF [AmountOfGold] >= 5 AND [RevealHiddenItem] = True THEN [Score] = Good
